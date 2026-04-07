@@ -35,7 +35,7 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Video backgrounds with crossfade */}
+      {/* Video background */}
       {!isMobile ? (
         <AnimatePresence mode="sync">
           {HERO_VIDEOS.map((src, i) =>
@@ -61,8 +61,20 @@ const HeroSection = () => {
           )}
         </AnimatePresence>
       ) : (
-        /* Mobile: static fallback – first frame poster or solid color */
-        <div className="absolute inset-0 bg-primary" />
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={HERO_VIDEOS[0]}
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls
+          preload="metadata"
+          onLoadedMetadata={(event) => {
+            const video = event.currentTarget;
+            video.play().catch(() => {});
+          }}
+        />
       )}
 
       {/* Dark overlay for text legibility */}

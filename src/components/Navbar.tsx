@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Catálogo", href: "#galeria" },
   { label: "Festa Pronta", href: "#servicos" },
   { label: "Personalizada", href: "#experiencias" },
-  { label: "Locação", href: "#diferenciais" },
+  // { label: "Locação", href: "#diferenciais" },
   { label: "Contato", href: "#contato" },
 ];
 

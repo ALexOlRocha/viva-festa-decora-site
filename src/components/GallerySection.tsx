@@ -53,6 +53,7 @@ const GallerySection = () => {
             </span>{" "}
             💕
           </h2>
+          <p className="text-black">+ de 200 temas disponíveis</p>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto text-lg">
             Do simples ao especial — criamos cenários que encantam!
           </p>
