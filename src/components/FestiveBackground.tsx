@@ -1,5 +1,8 @@
 const FestiveBackground = () => (
-  <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+  <div
+    className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
+    aria-hidden="true"
+  >
     {/* Subtle stripe pattern inspired by brand palette */}
     <div
       className="absolute inset-0 opacity-[0.03]"
@@ -7,7 +10,7 @@ const FestiveBackground = () => (
         backgroundImage: `repeating-linear-gradient(
           90deg,
           hsl(170 45% 50%) 0px,
-          hsl(170 45% 50%) 4px,
+          hsl(170 45% 50%) 12px,
           transparent 2px,
           transparent 80px
           
