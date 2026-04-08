@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Instagram, MessageCircle, Menu, X, Phone } from "lucide-react";
 import logo from "@/assets/logo-viva-festas.png";
 import { FaWhatsapp } from "react-icons/fa";
+import AmbientMusic from "./AmbientMusic";
 
 const navLinks = [
   { label: "Início", href: "#home" },
@@ -90,6 +91,7 @@ const Navbar = () => {
 
         {/* CTA + Social */}
         <div className="hidden lg:flex items-center gap-3">
+          <AmbientMusic />
           <a
             href="https://instagram.com/vivafestasdecora"
             target="_blank"
@@ -102,6 +104,7 @@ const Navbar = () => {
           >
             <Instagram size={18} />
           </a>
+
           <a
             href="https://wa.me/5511947018465"
             target="_blank"

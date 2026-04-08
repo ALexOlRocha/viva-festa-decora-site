@@ -8,6 +8,7 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FestiveBackground from "@/components/FestiveBackground";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => (
   <div className="min-h-screen bg-background relative">
@@ -19,8 +20,9 @@ const Index = () => (
     <DifferentialsSection />
     <ExperienceSection />
     <CTASection />
-    <Footer />
+    <ContactSection />
     <WhatsAppButton />
+    <Footer />
   </div>
 );
 
