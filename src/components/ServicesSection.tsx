@@ -79,7 +79,7 @@ const ServicesSection = () => {
               >
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <div className="relative group overflow-hidden rounded-3xl shadow-lg">
+                  <div className="relative group overflow-hidden rounded-md shadow-lg">
                     <img
                       src={s.image}
                       alt={s.title}
