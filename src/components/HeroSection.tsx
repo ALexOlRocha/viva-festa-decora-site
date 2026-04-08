@@ -129,7 +129,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900/20 via-pink-900/20 to-orange-900/20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black/80 via-primary/80 to-secondary/90"
     >
       {/* Video background */}
       <AnimatePresence mode="wait">
@@ -279,7 +279,7 @@ const HeroSection = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-sm tracking-wide rounded-full shadow-2xl overflow-hidden"
+            className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-primary/90 text-white font-bold text-sm tracking-wide rounded-full shadow-2xl overflow-hidden"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -287,7 +287,7 @@ const HeroSection = () => {
               Falar no WhatsApp
             </span>
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-700"
+              className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80"
               initial={{ opacity: 0 }}
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
