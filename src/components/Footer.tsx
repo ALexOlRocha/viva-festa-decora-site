@@ -2,7 +2,7 @@ import { Instagram, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo-viva-festas.png";
 
 const Footer = () => (
-  <footer className=" py-12 bg-card">
+  <footer className=" py-12 bg-card bg-white/90 backdrop-blur-sm border-t border-border relative z-10">
     <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
       <div className="flex items-center gap-3">
         <img
