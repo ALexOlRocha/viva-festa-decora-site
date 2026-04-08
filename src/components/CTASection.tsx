@@ -39,7 +39,7 @@ const CTASection = () => {
             <span className="font-serif-italic font-normal text-primary">
               acontecer
             </span>
-            ? 🚀
+            ?
           </motion.h2>
 
           <motion.p
@@ -63,13 +63,13 @@ const CTASection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-bold text-sm tracking-wide hover:brightness-110 transition-all duration-300 rounded-full shadow-lg hover:shadow-xl hover:shadow-primary/20"
             >
-              💬 Falar no WhatsApp
+              Falar no WhatsApp
             </a>
             <a
               href="#servicos"
               className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-secondary-foreground font-bold text-sm tracking-wide hover:brightness-110 transition-all duration-300 rounded-full shadow-lg hover:shadow-xl hover:shadow-secondary/20"
             >
-              🎨 Ver Catálogo
+              Ver Catálogo
             </a>
           </motion.div>
         </div>

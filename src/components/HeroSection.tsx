@@ -2,11 +2,13 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import logo from "@/assets/logo-viva-festas.png";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { ChevronDown } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/5511947018465";
 const CATALOG_URL = "#galeria";
 
 const HERO_VIDEOS = [
+  "/videos/hero-5.mp4",
   "/videos/hero-1.mp4",
   "/videos/hero-2.mp4",
   "/videos/hero-3.mp4",
@@ -104,8 +106,10 @@ const HeroSection = () => {
           className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white max-w-4xl mx-auto drop-shadow-lg"
         >
           Sua festa dos{" "}
-          <span className="font-serif-italic font-normal">sonhos</span> começa
-          aqui! 🎈
+          <span className="font-serif-italic font-normal text-black/90">
+            sonhos
+          </span>{" "}
+          começa aqui! 🎈
         </motion.h1>
 
         <motion.p
@@ -152,20 +156,21 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Enhanced Scroll Indicator */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 cursor-pointer"
+        onClick={() =>
+          document
+            .getElementById("galeria")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-          className="w-5 h-8 border-2 border-white/60 rounded-full flex items-start justify-center p-1"
-        >
-          <div className="w-1 h-2 bg-white/60 rounded-full" />
-        </motion.div>
+        <span className="text-[10px] font-ui text-white/40 uppercase tracking-[0.3em]">
+          Scroll
+        </span>
+        <ChevronDown className="w-4 h-4 text-white/40" />
       </motion.div>
     </section>
   );

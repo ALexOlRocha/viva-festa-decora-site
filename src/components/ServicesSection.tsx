@@ -1,42 +1,42 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-import galleryButterfly from "@/assets/gallery-butterfly.jpg";
-import gallerySol from "@/assets/gallery-sol.jpg";
-import gallerySofia from "@/assets/gallery-sofia.jpg";
-import gallerySpiderman from "@/assets/gallery-spiderman.jpg";
-import galleryHotwheels from "@/assets/gallery-hotwheels.jpg";
+import galleryPegueMonte from "@/assets/gallery-pegue-monte2.jpg";
+import galleryFesta from "@/assets/galleryfesta.jpg";
+import galleryPersonalizado from "@/assets/gallery-personalizado.jpg";
+import galleryLocacao from "@/assets/gallery-locacao.webp";
+import galleryBaloes from "@/assets/gallery-baloes.jpg";
 
 const services = [
   {
     title: "Pegue e Monte",
     desc: "Mais economia e diversão pro seu evento!",
     sub: "Retire os itens e monte sua própria decoração com praticidade. Perfeito pra quem curte botar a mão na massa e criar algo especial! 🎈",
-    image: galleryButterfly,
+    image: galleryPegueMonte,
   },
   {
     title: "Festa Pronta",
     desc: "A gente cuida de tudo pra você!",
     sub: "Montagem, desmontagem e transporte inclusos. É só curtir a festa sem preocupação! 🎉",
-    image: gallerySol,
+    image: galleryFesta,
   },
   {
     title: "Festa Personalizada",
     desc: "Um projeto exclusivo do jeitinho que você quer!",
     sub: "Cada detalhe pensado para refletir seu estilo. Do tema às cores, tudo feito sob medida pra você! 💎",
-    image: gallerySofia,
+    image: galleryPersonalizado,
   },
   {
     title: "Locação de Peças",
     desc: "Mesas, painéis, bandejas e itens temáticos",
     sub: "Monte sua decoração com qualidade profissional. Peças lindas e bem cuidadas pra deixar tudo perfeito! 🪑",
-    image: gallerySpiderman,
+    image: galleryLocacao,
   },
   {
     title: "Balões Decorativos",
     desc: "Arcos, personalizados e gás hélio",
     sub: "Destaque visual colorido e encantador! Balões que transformam qualquer espaço em festa! 🎈",
-    image: galleryHotwheels,
+    image: galleryBaloes,
   },
 ];
 
