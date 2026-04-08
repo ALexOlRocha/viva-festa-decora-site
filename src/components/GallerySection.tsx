@@ -4,8 +4,8 @@ import { useRef } from "react";
 
 import galleryButterfly from "@/assets/gallery-butterfly.jpg";
 import gallerySol from "@/assets/gallery-sol.jpg";
-import gallerySofia from "@/assets/gallery-sofia.jpg";
-import gallerySpiderman from "@/assets/gallery-spiderman.jpg";
+import casamento from "@/assets/casamento.webp";
+import futebool from "@/assets/futebool.jpg";
 import galleryHotwheels from "@/assets/gallery-hotwheels.jpg";
 import gallerySonic from "@/assets/gallery-sonic.jpg";
 
@@ -16,11 +16,11 @@ const images = [
     label: "🦋 Borboletas",
   },
   { src: gallerySol, alt: "Festa tema sol", label: "☀️ Volta ao Sol" },
-  { src: gallerySofia, alt: "Festa 365 sorrisos", label: "🌈 365 Sorrisos" },
+  { src: casamento, alt: "Festa de casamento", label: "💍 Casamento" },
   {
-    src: gallerySpiderman,
-    alt: "Festa Homem-Aranha",
-    label: "🕷️ Homem-Aranha",
+    src: futebool,
+    alt: "Festa de futebol",
+    label: "⚽ Futebol",
   },
   { src: galleryHotwheels, alt: "Festa Hot Wheels", label: "🏎️ Hot Wheels" },
   { src: gallerySonic, alt: "Festa Sonic", label: "💙 Sonic" },
